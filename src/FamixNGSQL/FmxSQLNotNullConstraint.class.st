@@ -4,7 +4,7 @@ I represent a NOT NULL constraint as defined in SQL standard.
 Class {
 	#name : #FmxSQLNotNullConstraint,
 	#superclass : #FmxSQLConstraint,
-	#category : 'FamixNGSQL-Entities'
+	#category : #'FamixNGSQL-Entities'
 }
 
 { #category : #meta }

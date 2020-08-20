@@ -6,7 +6,7 @@ Class {
 	#superclass : #FmxSQLClause,
 	#traits : 'FamixTWithAccesses + FamixTWithInvocations + FmxSQLTWithColumnReference + FmxSQLTWithReferencesGroupReference',
 	#classTraits : 'FamixTWithAccesses classTrait + FamixTWithInvocations classTrait + FmxSQLTWithColumnReference classTrait + FmxSQLTWithReferencesGroupReference classTrait',
-	#category : 'FamixNGSQL-Entities'
+	#category : #'FamixNGSQL-Entities'
 }
 
 { #category : #meta }

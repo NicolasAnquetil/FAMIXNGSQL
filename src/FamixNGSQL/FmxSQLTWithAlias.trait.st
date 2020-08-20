@@ -3,7 +3,7 @@ Trait {
 	#instVars : [
 		'#aliases => FMMany type: #FmxSQLAlias opposite: #parentBehaviouralEntity'
 	],
-	#category : 'FamixNGSQL-Traits'
+	#category : #'FamixNGSQL-Traits'
 }
 
 { #category : #meta }

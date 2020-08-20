@@ -10,7 +10,7 @@ Class {
 		'#columns => FMMany type: #FmxSQLColumn opposite: #type',
 		'#references => FMMany type: #FmxSQLTypeReference opposite: #type'
 	],
-	#category : 'FamixNGSQL-Entities'
+	#category : #'FamixNGSQL-Entities'
 }
 
 { #category : #meta }

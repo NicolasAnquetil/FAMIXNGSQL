@@ -140,6 +140,15 @@ FmxSQLColumnReference >> source: anObject [
 ]
 
 { #category : #accessing }
+FmxSQLColumnReference >> sourceAnchor [
+	^sourceAnchor
+		ifNil: [
+			self foreignKeyConstraintSource 
+				ifNotNil: [ :fk | fk sourceAnchor ]
+				ifNil: [ self source sourceAnchor ]]
+]
+
+{ #category : #accessing }
 FmxSQLColumnReference >> triggerStoredProceduresReferencing [
 	"Relation named: #triggerStoredProceduresReferencing type: #FmxSQLTriggerStoredProcedure opposite: #columnsReferenced"
 

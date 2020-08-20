@@ -3,7 +3,7 @@ Trait {
 	#instVars : [
 		'#outgoingReferencesGroupReferences => FMMany type: #FmxSQLTReferencesGroupReference opposite: #source'
 	],
-	#category : 'FamixNGSQL-Traits'
+	#category : #'FamixNGSQL-Traits'
 }
 
 { #category : #meta }

@@ -22,6 +22,13 @@ FmxSQLTableReference class >> annotation [
 	^self
 ]
 
+{ #category : #testing }
+FmxSQLTableReference >> isTableReference [
+
+	<generated>
+	^ true
+]
+
 { #category : #accessing }
 FmxSQLTableReference >> source [
 	"Relation named: #source type: #FmxSQLTWithTableReference opposite: #outgoingTableReferences"

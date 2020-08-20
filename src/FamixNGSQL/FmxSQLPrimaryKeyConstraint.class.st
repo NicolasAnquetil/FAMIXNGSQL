@@ -4,7 +4,7 @@ I represent a PRIMARY KEY constraint as defined in SQL standard.
 Class {
 	#name : #FmxSQLPrimaryKeyConstraint,
 	#superclass : #FmxSQLConstraint,
-	#category : 'FamixNGSQL-Entities'
+	#category : #'FamixNGSQL-Entities'
 }
 
 { #category : #meta }

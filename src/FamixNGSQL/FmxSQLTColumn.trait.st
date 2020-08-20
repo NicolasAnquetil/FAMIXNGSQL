@@ -3,7 +3,7 @@ Trait {
 	#instVars : [
 		'#columnsContainer => FMOne type: #FmxSQLColumnsContainer opposite: #columns'
 	],
-	#category : 'FamixNGSQL-Traits'
+	#category : #'FamixNGSQL-Traits'
 }
 
 { #category : #meta }

@@ -9,7 +9,7 @@ Class {
 	#instVars : [
 		'#table => FMOne type: #FmxSQLTable opposite: #constraints'
 	],
-	#category : 'FamixNGSQL-Entities'
+	#category : #'FamixNGSQL-Entities'
 }
 
 { #category : #meta }

@@ -3,7 +3,7 @@ Trait {
 	#instVars : [
 		'#cursors => FMMany type: #FmxSQLCursor opposite: #parentBehaviouralEntity'
 	],
-	#category : 'FamixNGSQL-Traits'
+	#category : #'FamixNGSQL-Traits'
 }
 
 { #category : #meta }

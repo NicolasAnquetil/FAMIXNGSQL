@@ -6,7 +6,7 @@ Class {
 	#superclass : #FmxSQLReference,
 	#traits : 'FmxSQLTReferencesGroupReference + TDependencyQueries + TEntityMetaLevelDependency',
 	#classTraits : 'FmxSQLTReferencesGroupReference classTrait + TDependencyQueries classTrait + TEntityMetaLevelDependency classTrait',
-	#category : 'FamixNGSQL-Entities'
+	#category : #'FamixNGSQL-Entities'
 }
 
 { #category : #meta }

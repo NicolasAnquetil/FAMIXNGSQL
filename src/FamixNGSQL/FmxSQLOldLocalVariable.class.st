@@ -6,7 +6,7 @@ Class {
 	#superclass : #FmxSQLLocalVariable,
 	#traits : 'FmxSQLColumnsContainer',
 	#classTraits : 'FmxSQLColumnsContainer classTrait',
-	#category : 'FamixNGSQL-Entities'
+	#category : #'FamixNGSQL-Entities'
 }
 
 { #category : #meta }

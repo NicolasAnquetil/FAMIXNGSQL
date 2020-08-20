@@ -10,7 +10,7 @@ Class {
 		'#parentBehaviouralEntity => FMOne type: #FmxSQLTWithCursor opposite: #cursors',
 		'#references => FMMany type: #FmxSQLCursorReference opposite: #cursor'
 	],
-	#category : 'FamixNGSQL-Entities'
+	#category : #'FamixNGSQL-Entities'
 }
 
 { #category : #meta }

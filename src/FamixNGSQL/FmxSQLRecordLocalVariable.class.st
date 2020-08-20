@@ -9,7 +9,7 @@ Class {
 	#instVars : [
 		'#queryBoundTo => FMOne type: #FmxSQLSelectQuery opposite: #recordLocalVariables'
 	],
-	#category : 'FamixNGSQL-Entities'
+	#category : #'FamixNGSQL-Entities'
 }
 
 { #category : #meta }

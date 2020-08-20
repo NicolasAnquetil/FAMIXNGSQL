@@ -9,7 +9,7 @@ Class {
 	#instVars : [
 		'#query => FMOne type: #FmxSQLCRUDQuery opposite: #clauses'
 	],
-	#category : 'FamixNGSQL-Entities'
+	#category : #'FamixNGSQL-Entities'
 }
 
 { #category : #meta }

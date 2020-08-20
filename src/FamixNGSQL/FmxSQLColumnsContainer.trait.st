@@ -6,7 +6,7 @@ Trait {
 	#instVars : [
 		'#columns => FMMany type: #FmxSQLTColumn opposite: #columnsContainer'
 	],
-	#category : 'FamixNGSQL-Traits'
+	#category : #'FamixNGSQL-Traits'
 }
 
 { #category : #meta }

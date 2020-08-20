@@ -1,7 +1,7 @@
 Class {
 	#name : #FmxSQLEntity,
 	#superclass : #MooseEntity,
-	#category : 'FamixNGSQL-Entities'
+	#category : #'FamixNGSQL-Entities'
 }
 
 { #category : #meta }
@@ -263,6 +263,13 @@ FmxSQLEntity >> isStoredProcedureCall [
 
 { #category : #testing }
 FmxSQLEntity >> isStructuralEntity [
+
+	<generated>
+	^ false
+]
+
+{ #category : #testing }
+FmxSQLEntity >> isTableReference [
 
 	<generated>
 	^ false

@@ -3,7 +3,7 @@ Trait {
 	#instVars : [
 		'#outgoingCursorReferences => FMMany type: #FmxSQLCursorReference opposite: #source'
 	],
-	#category : 'FamixNGSQL-Traits'
+	#category : #'FamixNGSQL-Traits'
 }
 
 { #category : #meta }

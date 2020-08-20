@@ -6,7 +6,7 @@ Class {
 	#superclass : #FmxSQLCRUDQuery,
 	#traits : 'FmxSQLTDefiningDerivedTables',
 	#classTraits : 'FmxSQLTDefiningDerivedTables classTrait',
-	#category : 'FamixNGSQL-Entities'
+	#category : #'FamixNGSQL-Entities'
 }
 
 { #category : #meta }

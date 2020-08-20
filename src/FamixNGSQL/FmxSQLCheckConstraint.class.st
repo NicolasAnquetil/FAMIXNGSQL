@@ -9,7 +9,7 @@ Class {
 	#instVars : [
 		'#storedProceduresCalled => FMMany type: #FmxSQLStoredProcedure opposite: #checkConstraintsCalling'
 	],
-	#category : 'FamixNGSQL-Entities'
+	#category : #'FamixNGSQL-Entities'
 }
 
 { #category : #meta }

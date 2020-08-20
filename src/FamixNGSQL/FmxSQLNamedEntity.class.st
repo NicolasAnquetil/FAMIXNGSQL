@@ -3,7 +3,7 @@ Class {
 	#superclass : #FmxSQLSourcedEntity,
 	#traits : 'FamixTNamed + TDependencyQueries + TEntityMetaLevelDependency',
 	#classTraits : 'FamixTNamed classTrait + TDependencyQueries classTrait + TEntityMetaLevelDependency classTrait',
-	#category : 'FamixNGSQL-Entities'
+	#category : #'FamixNGSQL-Entities'
 }
 
 { #category : #meta }

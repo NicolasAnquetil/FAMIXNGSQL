@@ -1,6 +1,6 @@
 Trait {
 	#name : #FmxSQLTArgument,
-	#category : 'FamixNGSQL-Traits'
+	#category : #'FamixNGSQL-Traits'
 }
 
 { #category : #meta }

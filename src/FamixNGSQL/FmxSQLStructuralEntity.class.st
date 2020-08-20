@@ -6,7 +6,7 @@ Class {
 	#superclass : #FmxSQLNamedEntity,
 	#traits : 'FamixTNamespaceEntity',
 	#classTraits : 'FamixTNamespaceEntity classTrait',
-	#category : 'FamixNGSQL-Entities'
+	#category : #'FamixNGSQL-Entities'
 }
 
 { #category : #meta }

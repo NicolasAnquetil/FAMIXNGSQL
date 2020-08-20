@@ -4,7 +4,7 @@ I am a with clause
 Class {
 	#name : #FmxSQLWithClause,
 	#superclass : #FmxSQLClause,
-	#category : 'FamixNGSQL-Entities'
+	#category : #'FamixNGSQL-Entities'
 }
 
 { #category : #meta }

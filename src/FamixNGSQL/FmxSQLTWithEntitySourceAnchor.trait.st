@@ -3,7 +3,7 @@ Trait {
 	#instVars : [
 		'#anchorsOnIntervalsOfCode => FMMany type: #FmxSQLEntitySourceAnchor opposite: #entity'
 	],
-	#category : 'FamixNGSQL-Traits'
+	#category : #'FamixNGSQL-Traits'
 }
 
 { #category : #meta }

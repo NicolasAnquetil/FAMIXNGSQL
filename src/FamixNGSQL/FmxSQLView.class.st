@@ -10,7 +10,7 @@ Class {
 		'#query => FMOne type: #FmxSQLSelectQuery opposite: #viewDefining',
 		'#references => FMMany type: #FmxSQLViewReference opposite: #view'
 	],
-	#category : 'FamixNGSQL-Entities'
+	#category : #'FamixNGSQL-Entities'
 }
 
 { #category : #meta }

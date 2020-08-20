@@ -9,7 +9,7 @@ Class {
 	#instVars : [
 		'#parentBehaviouralEntity => FMOne type: #FmxSQLTWithAlias opposite: #aliases'
 	],
-	#category : 'FamixNGSQL-Entities'
+	#category : #'FamixNGSQL-Entities'
 }
 
 { #category : #meta }

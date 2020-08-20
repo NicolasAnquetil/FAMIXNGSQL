@@ -9,7 +9,7 @@ Class {
 	#instVars : [
 		'#columnAliases => FMMany type: #FmxSQLColumnAlias opposite: #columnsContainerAlias'
 	],
-	#category : 'FamixNGSQL-Entities'
+	#category : #'FamixNGSQL-Entities'
 }
 
 { #category : #meta }

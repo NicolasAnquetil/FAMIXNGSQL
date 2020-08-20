@@ -4,7 +4,7 @@ I am a limit clause
 Class {
 	#name : #FmxSQLLimitClause,
 	#superclass : #FmxSQLClause,
-	#category : 'FamixNGSQL-Entities'
+	#category : #'FamixNGSQL-Entities'
 }
 
 { #category : #meta }

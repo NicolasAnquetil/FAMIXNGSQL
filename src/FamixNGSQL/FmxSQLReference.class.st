@@ -10,7 +10,7 @@ Class {
 		'#belongsToGroup => FMOne type: #FmxSQLReferencesGroup opposite: #references',
 		'#storedProcedureContainer => FMOne type: #FmxSQLStoredProcedureCall opposite: #arguments'
 	],
-	#category : 'FamixNGSQL-Entities'
+	#category : #'FamixNGSQL-Entities'
 }
 
 { #category : #meta }
@@ -90,7 +90,7 @@ FmxSQLReference >> sourceAnchor [
 		ifNil: [ 
 			self belongsToGroup
 				ifNil: [ FmxSQLNoSourceAnchor signalForEntityWithoutSourceAnchor: self ]
-				ifNotNil: #sourceAnchor ]
+				ifNotNil: [ :e | 1 halt. e sourceAnchor] ]
 ]
 
 { #category : #accessing }
@@ -105,7 +105,7 @@ FmxSQLReference >> sourceAnchorOrReferenceGroupSourceAnchor [
 	^ self sourceAnchor
 		ifNil: [ 
 			self belongsToGroup
-				ifNotNil: #sourceAnchor
+				ifNotNil: [ :e | 1 halt. e sourceAnchor]
 				ifNil: [ nil ] ]
 ]
 

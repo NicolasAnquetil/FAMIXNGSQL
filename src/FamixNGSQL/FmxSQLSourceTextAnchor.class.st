@@ -3,7 +3,7 @@ Class {
 	#superclass : #FmxSQLSourceAnchor,
 	#traits : 'FamixTWithImmediateSource',
 	#classTraits : 'FamixTWithImmediateSource classTrait',
-	#category : 'FamixNGSQL-Entities'
+	#category : #'FamixNGSQL-Entities'
 }
 
 { #category : #meta }

@@ -6,7 +6,7 @@ Trait {
 	#instVars : [
 		'#queries => FMMany type: #FmxSQLCRUDQuery opposite: #container'
 	],
-	#category : 'FamixNGSQL-Traits'
+	#category : #'FamixNGSQL-Traits'
 }
 
 { #category : #meta }

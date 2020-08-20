@@ -127,6 +127,7 @@ FmxSQLStructuralMetamodelGenerator >> defineStructuralEntities [
 	tableReference := builder
 		newClassNamed: #TableReference
 		comment: self tableReferenceComment.
+	tableReference withTesting.
 	columnReference := builder
 		newClassNamed: #ColumnReference
 		comment: self columnReferenceComment.

@@ -4,7 +4,7 @@ I am a on conflict clause
 Class {
 	#name : #FmxSQLOnConflictClause,
 	#superclass : #FmxSQLClause,
-	#category : 'FamixNGSQL-Entities'
+	#category : #'FamixNGSQL-Entities'
 }
 
 { #category : #meta }
