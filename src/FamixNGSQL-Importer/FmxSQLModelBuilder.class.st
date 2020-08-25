@@ -205,6 +205,7 @@ FmxSQLModelBuilder >> createTableInheritanceRelationsFor: mooseModel [
 
 { #category : #'model building - entities' }
 FmxSQLModelBuilder >> createTablesIn: mooseModel [
+	<DBETODO>
 	metadata getTables do: [ :pgTable |
 		|table|
 		table := FmxSQLTable new
@@ -224,18 +225,21 @@ FmxSQLModelBuilder >> createTablesIn: mooseModel [
 						type: (pgToFamixEntities at: pgColumn datatype);
 						yourself).
 			pgColumn isNotNull ifTrue: [ 
-				|constraint|
+				|constraint ref|
 				constraint := FmxSQLNotNullConstraint new
 					table: table;
 					mooseModel: mooseModel;
 					yourself.
-				FmxSQLColumnReference new
-					source: constraint;
-					column: (pgToFamixEntities at: pgColumn);
-					isWildCardReference: false;
-					isCertain: true;
-					mooseModel: mooseModel;
-					yourself ] ].
+				ref := FmxSQLColumnReference new
+							source: constraint;
+							column: (pgToFamixEntities at: pgColumn);
+							isWildCardReference: false;
+							isCertain: true;
+							mooseModel: mooseModel;
+							yourself.
+				self flag: 'Should probably be somewhere else, where all source anchors are set'.
+				ref 
+					sourceAnchor: (FmxSQLSourceTextAnchor new source: '' ; element: ref ; yourself) ] ].
 		"Add special columns."
 		FmxSQLColumn new
 			name: 'tableoid';
