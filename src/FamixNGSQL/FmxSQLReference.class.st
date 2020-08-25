@@ -90,7 +90,7 @@ FmxSQLReference >> sourceAnchor [
 		ifNil: [ 
 			self belongsToGroup
 				ifNil: [ FmxSQLNoSourceAnchor signalForEntityWithoutSourceAnchor: self ]
-				ifNotNil: [ :e | 1 halt. e sourceAnchor] ]
+				ifNotNil: [ :e | e sourceAnchor] ]
 ]
 
 { #category : #accessing }
@@ -105,8 +105,14 @@ FmxSQLReference >> sourceAnchorOrReferenceGroupSourceAnchor [
 	^ self sourceAnchor
 		ifNil: [ 
 			self belongsToGroup
-				ifNotNil: [ :e | 1 halt. e sourceAnchor]
-				ifNil: [ nil ] ]
+				ifNotNil: [:e | e sourceAnchor]
+				ifNil: [ 1halt. self flag: 'never comes here'. nil ] ]
+]
+
+{ #category : #accessing }
+FmxSQLReference >> sourcedBelonger [
+	"nothing by default"
+	^nil
 ]
 
 { #category : #accessing }

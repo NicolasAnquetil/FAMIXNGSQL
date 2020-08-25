@@ -58,6 +58,11 @@ FmxSQLStoredProcedureCall >> isStoredProcedureCall [
 ]
 
 { #category : #accessing }
+FmxSQLStoredProcedureCall >> sourcedBelonger [ 
+	^self receiver sourcedBelonger
+]
+
+{ #category : #accessing }
 FmxSQLStoredProcedureCall >> stop [
 	"Returns the last position of the stored procedure name in the source code (without parentheses and args)."
 "	| sourceCode |

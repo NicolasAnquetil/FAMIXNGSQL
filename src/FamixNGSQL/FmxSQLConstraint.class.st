@@ -52,6 +52,11 @@ FmxSQLConstraint >> isConstraint [
 ]
 
 { #category : #accessing }
+FmxSQLConstraint >> sourcedBelonger [
+	^self belongsTo sourcedBelonger 
+]
+
+{ #category : #accessing }
 FmxSQLConstraint >> table [
 	"Relation named: #table type: #FmxSQLTable opposite: #constraints"
 

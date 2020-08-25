@@ -13,6 +13,11 @@ FmxSQLEntity class >> annotation [
 	^self
 ]
 
+{ #category : #converting }
+FmxSQLEntity class >> asStringForSpec [
+	^self name allButFirst: 'FmxSQL' size
+]
+
 { #category : #meta }
 FmxSQLEntity class >> metamodel [
 

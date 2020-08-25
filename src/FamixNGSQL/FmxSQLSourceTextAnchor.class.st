@@ -14,3 +14,13 @@ FmxSQLSourceTextAnchor class >> annotation [
 	<generated>
 	^self
 ]
+
+{ #category : #accessing }
+FmxSQLSourceTextAnchor >> end [
+	^source size
+]
+
+{ #category : #accessing }
+FmxSQLSourceTextAnchor >> start [
+	^1
+]

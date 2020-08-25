@@ -106,11 +106,6 @@ FmxSQLStoredProcedure >> sourceCodeAsText [
 ]
 
 { #category : #accessing }
-FmxSQLStoredProcedure >> sourcedBelonger [
-	^ self
-]
-
-{ #category : #accessing }
 FmxSQLStoredProcedure >> storedProceduresDependencies [
 	"Returns the stored procedures that I depend on directly (I call them directly)."
 	^ ((self queryOutgoing: FmxSQLStoredProcedureCall) collect: [ :ref | ref to ]) asSet

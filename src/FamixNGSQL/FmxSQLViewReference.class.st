@@ -40,6 +40,11 @@ FmxSQLViewReference >> source: anObject [
 ]
 
 { #category : #accessing }
+FmxSQLViewReference >> sourcedBelonger [ 
+	^self source sourcedBelonger
+]
+
+{ #category : #accessing }
 FmxSQLViewReference >> view [
 	"Relation named: #view type: #FmxSQLView opposite: #references"
 

@@ -47,6 +47,11 @@ FmxSQLTableReference >> source: anObject [
 ]
 
 { #category : #accessing }
+FmxSQLTableReference >> sourcedBelonger [ 
+	^self source sourcedBelonger
+]
+
+{ #category : #accessing }
 FmxSQLTableReference >> table [
 	"Relation named: #table type: #FmxSQLTable opposite: #references"
 

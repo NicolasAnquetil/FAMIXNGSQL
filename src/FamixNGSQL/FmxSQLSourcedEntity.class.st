@@ -14,3 +14,8 @@ FmxSQLSourcedEntity class >> annotation [
 	<generated>
 	^self
 ]
+
+{ #category : #accessing }
+FmxSQLSourcedEntity >> sourcedBelonger [
+	^self
+]

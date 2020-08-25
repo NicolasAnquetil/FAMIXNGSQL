@@ -14,3 +14,13 @@ FmxSQLNamedEntity class >> annotation [
 	<generated>
 	^self
 ]
+
+{ #category : #converting }
+FmxSQLNamedEntity >> asStringForSpec [
+	^ String streamContents: [ :s |
+		s nextPutAll: (self className allButFirst: 'FmxSQL' size).
+		self name ifNotNil: [
+			s
+				nextPutAll: ': ';
+				nextPutAll: self name ] ]
+]
