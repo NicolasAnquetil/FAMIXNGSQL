@@ -7,11 +7,17 @@ FmxSQLReference >> gtSourceCodeIn: composite [
 		title: 'Source code';
 		display: [ self sourceAnchorIfNone: [ nil ] ];
 		format: [ :t | 
-			[ self sourceAnchor entity sourceCodeAsText ] on: FmxSQLNoSourceAnchor do: [ 'No source anchor' asText ] ];
+			[ self sourceAnchor
+				ifNil: [ FmxSQLNoSourceAnchor signal ]
+				ifNotNil: [ self sourceAnchor entity sourceCodeAsText ] ]
+			on: Error
+			do: [ 'No source anchor' asText ] ];
 		withLineNumbers: true;
 		initialize: [ :presentation | 
 			[ self sourceAnchor in: [ :anchor |
-				presentation selectionInterval: (anchor start to: anchor end) ]
+				anchor
+					ifNil: [ FmxSQLNoSourceAnchor signal ]
+				 	ifNotNil: [ presentation selectionInterval: (anchor start to: anchor end)] ]
 			 ] on: FmxSQLNoSourceAnchor do: [ "Nothing on purpose" ] ];
 		yourself
 ]
