@@ -237,9 +237,9 @@ FmxSQLModelBuilder >> createTablesIn: mooseModel [
 							isCertain: true;
 							mooseModel: mooseModel;
 							yourself.
-				self flag: 'Should probably be somewhere else, where all source anchors are set'.
+				"self flag: 'Should probably be somewhere else, where all source anchors are set'.
 				ref 
-					sourceAnchor: (FmxSQLSourceTextAnchor new source: '' ; element: ref ; yourself) ] ].
+					sourceAnchor: (FmxSQLSourceTextAnchor new source: '' ; element: ref ; entity: (constraint table) ;  yourself)" ] ].
 		"Add special columns."
 		FmxSQLColumn new
 			name: 'tableoid';
