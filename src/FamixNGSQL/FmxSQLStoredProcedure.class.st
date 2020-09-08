@@ -85,6 +85,11 @@ FmxSQLStoredProcedure >> isStoredProcedure [
 ]
 
 { #category : #accessing }
+FmxSQLStoredProcedure >> qualifiedName [
+	^self parentNamespace name , '.' , self name
+]
+
+{ #category : #accessing }
 FmxSQLStoredProcedure >> returnType [
 	"Relation named: #returnType type: #FmxSQLAbstractType opposite: #storedProceduresReturning"
 

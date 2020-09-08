@@ -115,6 +115,11 @@ FmxSQLTable >> primaryKeyConstraints [
 ]
 
 { #category : #accessing }
+FmxSQLTable >> qualifiedName [
+	^parentNamespace name , '.' , self name
+]
+
+{ #category : #accessing }
 FmxSQLTable >> references [
 	"Relation named: #references type: #FmxSQLTableReference opposite: #table"
 

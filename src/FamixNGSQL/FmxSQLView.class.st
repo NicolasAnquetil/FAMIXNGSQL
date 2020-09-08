@@ -104,6 +104,11 @@ FmxSQLView >> isView [
 ]
 
 { #category : #accessing }
+FmxSQLView >> qualifiedName [
+	^parentNamespace name , '.' , self name
+]
+
+{ #category : #accessing }
 FmxSQLView >> query [
 	"Relation named: #query type: #FmxSQLSelectQuery opposite: #viewDefining"
 

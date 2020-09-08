@@ -81,6 +81,11 @@ FmxSQLColumn >> primaryKey [
 ]
 
 { #category : #accessing }
+FmxSQLColumn >> qualifiedName [
+	^columnsContainer qualifiedName , '.' , self name
+]
+
+{ #category : #accessing }
 FmxSQLColumn >> references [
 	"Relation named: #references type: #FmxSQLColumnReference opposite: #column"
 
