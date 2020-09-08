@@ -5,6 +5,21 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
+FmxSQLMooseModel >> getColumn: columnName fromTable: tableName [
+	^ self detect: [ :e |
+		e class = FmxSQLColumn and: [
+			(e name = columnName) and: [ e columnsContainer name = tableName ] ]
+		]
+]
+
+{ #category : #'as yet unclassified' }
+FmxSQLMooseModel >> getTable: tableName [
+	^ self detect: [ :e |
+		e class = FmxSQLTable and: [ e name = tableName ]
+	]
+]
+
+{ #category : #'as yet unclassified' }
 FmxSQLMooseModel >> gtEntitiesIn: composite [
 	"To not show all entities in model inspector"
 ]
