@@ -7,8 +7,18 @@ Class {
 { #category : #'as yet unclassified' }
 FmxSQLMooseModel >> getColumn: columnName fromTable: tableName [
 	^ self detect: [ :e |
-		e class = FmxSQLColumn and: [
-			(e name = columnName) and: [ e columnsContainer name = tableName ] ]
+		e class = FmxSQLColumn and:
+		[ (e name = columnName) and: 
+		[ e columnsContainer name = tableName ] ]
+		]
+]
+
+{ #category : #'as yet unclassified' }
+FmxSQLMooseModel >> getConstraint: constraintName fromTable: tableName [
+	^ self detect: [ :e |
+		(e isKindOf: FmxSQLConstraint) and: 
+			[ (e name = constraintName) and: 
+			 [ e table name = tableName ] ]
 		]
 ]
 
