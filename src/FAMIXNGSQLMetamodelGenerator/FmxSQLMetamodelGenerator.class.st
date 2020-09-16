@@ -774,6 +774,7 @@ FmxSQLMetamodelGenerator >> defineReferences [
 	viewReference := builder
 		newClassNamed: #ViewReference
 		comment: self viewReferenceComment.	"Concrete reference entities."
+	viewReference withTesting.
 	derivedTableReference := builder
 		newClassNamed: #DerivedTableReference
 		comment: self derivedTableReferenceComment.

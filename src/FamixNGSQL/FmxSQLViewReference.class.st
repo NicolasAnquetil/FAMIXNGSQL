@@ -22,6 +22,13 @@ FmxSQLViewReference class >> annotation [
 	^self
 ]
 
+{ #category : #testing }
+FmxSQLViewReference >> isViewReference [
+
+	<generated>
+	^ true
+]
+
 { #category : #accessing }
 FmxSQLViewReference >> source [
 	"Relation named: #source type: #FmxSQLTWithViewReference opposite: #outgoingViewReferences"

@@ -323,6 +323,13 @@ FmxSQLEntity >> isView [
 ]
 
 { #category : #testing }
+FmxSQLEntity >> isViewReference [
+
+	<generated>
+	^ false
+]
+
+{ #category : #testing }
 FmxSQLEntity >> isWhereClause [
 
 	<generated>

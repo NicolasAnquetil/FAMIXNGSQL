@@ -29,6 +29,11 @@ Class {
 	#category : #FAMIXNGSQLMetamodelGenerator
 }
 
+{ #category : #testing }
+FmxSQLStructuralMetamodelGenerator class >> isAbstract [
+	^ self = FmxSQLStructuralMetamodelGenerator 
+]
+
 { #category : #'comments - SQL' }
 FmxSQLStructuralMetamodelGenerator >> checkConstraintComment [
 	^ 'I represent a CHECK constraint as defined in SQL standard.'

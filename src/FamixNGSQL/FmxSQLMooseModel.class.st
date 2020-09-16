@@ -37,6 +37,13 @@ FmxSQLMooseModel >> getTable: tableName [
 ]
 
 { #category : #'as yet unclassified' }
+FmxSQLMooseModel >> getView: viewName [
+	^ self detect: [ :e |
+		e class = FmxSQLView and: [ e name = viewName ]
+	]
+]
+
+{ #category : #'as yet unclassified' }
 FmxSQLMooseModel >> gtEntitiesIn: composite [
 	"To not show all entities in model inspector"
 ]
