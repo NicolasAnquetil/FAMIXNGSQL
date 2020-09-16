@@ -23,6 +23,13 @@ FmxSQLMooseModel >> getConstraint: constraintName fromTable: tableName [
 ]
 
 { #category : #'as yet unclassified' }
+FmxSQLMooseModel >> getSchema: schemaName [
+	^ self detect: [ :e |
+		e class = FmxSQLNamespace and: [ e name = schemaName ]
+	]
+]
+
+{ #category : #'as yet unclassified' }
 FmxSQLMooseModel >> getTable: tableName [
 	^ self detect: [ :e |
 		e class = FmxSQLTable and: [ e name = tableName ]
