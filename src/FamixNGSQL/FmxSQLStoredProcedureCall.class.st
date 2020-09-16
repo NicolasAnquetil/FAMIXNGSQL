@@ -59,7 +59,7 @@ FmxSQLStoredProcedureCall >> isStoredProcedureCall [
 
 { #category : #accessing }
 FmxSQLStoredProcedureCall >> sourcedBelonger [ 
-	^self receiver sourcedBelonger
+	^self sender sourcedBelonger
 ]
 
 { #category : #accessing }

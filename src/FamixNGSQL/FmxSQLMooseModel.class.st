@@ -30,6 +30,13 @@ FmxSQLMooseModel >> getSchema: schemaName [
 ]
 
 { #category : #'as yet unclassified' }
+FmxSQLMooseModel >> getStoredProcedure: spName [
+	^ self detect: [ :e |
+		e class = FmxSQLStoredProcedure and: [ e name = spName ]
+	]
+]
+
+{ #category : #'as yet unclassified' }
 FmxSQLMooseModel >> getTable: tableName [
 	^ self detect: [ :e |
 		e class = FmxSQLTable and: [ e name = tableName ]
