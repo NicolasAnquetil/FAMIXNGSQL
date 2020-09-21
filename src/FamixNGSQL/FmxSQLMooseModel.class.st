@@ -4,7 +4,7 @@ Class {
 	#category : #FamixNGSQL
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #'accessing - private' }
 FmxSQLMooseModel >> getColumn: columnName fromTable: tableName [
 	^ self detect: [ :e |
 		e class = FmxSQLColumn and:
@@ -13,7 +13,7 @@ FmxSQLMooseModel >> getColumn: columnName fromTable: tableName [
 		]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #'accessing - private' }
 FmxSQLMooseModel >> getConstraint: constraintName fromTable: tableName [
 	^ self detect: [ :e |
 		(e isKindOf: FmxSQLConstraint) and: 
@@ -22,32 +22,36 @@ FmxSQLMooseModel >> getConstraint: constraintName fromTable: tableName [
 		]
 ]
 
-{ #category : #'as yet unclassified' }
-FmxSQLMooseModel >> getSchema: schemaName [
-	^ self detect: [ :e |
-		e class = FmxSQLNamespace and: [ e name = schemaName ]
+{ #category : #'accessing - private' }
+FmxSQLMooseModel >> getEntityNamed: aName ofType: aClass [
+	^self detect: [ :e |
+		e class = aClass and: [ e name = aName ]
 	]
 ]
 
-{ #category : #'as yet unclassified' }
-FmxSQLMooseModel >> getStoredProcedure: spName [
-	^ self detect: [ :e |
-		e class = FmxSQLStoredProcedure and: [ e name = spName ]
-	]
+{ #category : #'accessing - private' }
+FmxSQLMooseModel >> getSchema: aName [
+	^ self getEntityNamed: aName ofType: FmxSQLNamespace
 ]
 
-{ #category : #'as yet unclassified' }
-FmxSQLMooseModel >> getTable: tableName [
-	^ self detect: [ :e |
-		e class = FmxSQLTable and: [ e name = tableName ]
-	]
+{ #category : #'accessing - private' }
+FmxSQLMooseModel >> getStoredProcedure: aName [
+	^ self getEntityNamed: aName ofType: FmxSQLStoredProcedure
 ]
 
-{ #category : #'as yet unclassified' }
-FmxSQLMooseModel >> getView: viewName [
-	^ self detect: [ :e |
-		e class = FmxSQLView and: [ e name = viewName ]
-	]
+{ #category : #'accessing - private' }
+FmxSQLMooseModel >> getTable: aName [
+	^self getEntityNamed: aName ofType: FmxSQLTable
+]
+
+{ #category : #'accessing - private' }
+FmxSQLMooseModel >> getTrigger: aName [
+	^ self getEntityNamed: aName ofType: FmxSQLTrigger
+]
+
+{ #category : #'accessing - private' }
+FmxSQLMooseModel >> getView: aName [
+		^ self getEntityNamed: aName ofType: FmxSQLView
 ]
 
 { #category : #'as yet unclassified' }
