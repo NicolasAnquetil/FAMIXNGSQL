@@ -69,7 +69,6 @@ FmxSQLView >> columnsToColumnReferences [
 						outgoingRef class = FmxSQLReferencesGroup
 							ifTrue: [ self columnNamed: outgoingRef incomingReferencesGroupReference first source name ]
 							ifFalse: [ self columnNamed: outgoingRef column name ] ])
-			ifPresent: [ self halt ]
 			ifAbsentPut: outgoingRef ].
 	^ mapping
 ]
